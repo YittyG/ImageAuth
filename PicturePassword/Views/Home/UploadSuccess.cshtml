@@ -1,0 +1,12 @@
+﻿
+@using PicturePassword.data
+
+@model UploadedPicture
+
+<div class="row">
+    <h3>Your image has been uploaded successfully! Here is the Link:</h3>
+    <br />
+    <a href="http://localhost:58573/home/viewimage?id=@Model.id">http://localhost:58573/home/viewimage?id=@Model.id</a>
+    <br />
+    <h4>Password: @Model.Password</h4>
+</div>

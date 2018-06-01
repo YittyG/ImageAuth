@@ -1,0 +1,21 @@
+﻿@using PicturePassword.data
+
+@model User
+    
+<br/>
+<a href="/home/myaccount" class="btn btn-block">Click To View Your Downloaded Images</a>
+
+<br/>
+<div class="row">
+        <div class="col-md-6 col-md-offset-3 well">
+            <form method="post" action="/home/UploadSuccess" enctype="multipart/form-data">
+                <input type="file" name="image" placeholder="Image File" />
+                <br />
+                <input type="text" name="password" placeholder="Enter Password Here" />
+                <br/>
+                <input type="hidden" name="userid" value="@Model.id" />
+                <br/>
+                <button class="btn btn-success">Submit</button>
+            </form>
+        </div>
+    </div>
